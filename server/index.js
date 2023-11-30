@@ -18,6 +18,9 @@ app.use('/estabelecimento', require('./routes/estabelecimento.js'));
 //Rota -> produtos
 app.use('/produtos', require('./routes/produtos'));
 
+//Rota -> pedidos
+app.use('/pedidos', require('./routes/pedidos'));
+
 app.listen(5000, () => {
     console.log('Escutando porta 5000');
 });

@@ -53,6 +53,6 @@ CREATE TABLE pedidos(
     id_produto INTEGER,
     adicional VARCHAR(200),
     quantia INTEGER,
-    data_pedido TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, -- adicionando um campo de data e hora para o pedido
+    -- data_pedido TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, -- adicionando um campo de data e hora para o pedido
     FOREIGN KEY(id_produto) REFERENCES produtos(id_produto)
 );
