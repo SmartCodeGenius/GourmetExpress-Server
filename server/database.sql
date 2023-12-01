@@ -51,6 +51,7 @@ CREATE TABLE produtos(
 CREATE TABLE pedidos(
     id_pedido SERIAL PRIMARY KEY,
     id_produto INTEGER,
+    -- preco_produto FLOAT NOT NULL,
     adicional VARCHAR(200),
     quantia INTEGER,
     -- data_pedido TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, -- adicionando um campo de data e hora para o pedido
